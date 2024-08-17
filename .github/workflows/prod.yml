@@ -20,7 +20,6 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
-          registry-url: "https://npm.pkg.github.com"
 
       - name: Install dependencies
         run: pnpm install
@@ -31,12 +30,8 @@ jobs:
           mkdir ./build
           mv ./storybook-static ./build/storybook
 
-      # - name: Deploy gh-pages
-      #   uses: peaceiris/actions-gh-pages@v4
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./build
-
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build

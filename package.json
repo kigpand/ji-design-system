@@ -1,15 +1,11 @@
 {
-  "name": "@kigpand/ji-design-system",
+  "name": "ji-design-system",
   "version": "6.5.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/types/index.d.ts",
   "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kigpand/ji-design-system"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
