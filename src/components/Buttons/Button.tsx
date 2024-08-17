@@ -15,27 +15,12 @@ const Button = (props: ButtonProps) => {
 
 export default Button;
 
-const ButtonStyled = styled.button`
-  padding: 8px 16px;
-  font-weight: bold;
-  color: white;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-`;
+const ButtonStyled = styled.button``;
 
-const PrimaryButton = styled(ButtonStyled)`
-  background-color: #3dbfeb;
-`;
+const PrimaryButton = styled(ButtonStyled)``;
 
-const SecondaryButton = styled(ButtonStyled)`
-  background-color: #ff5252;
-`;
+const SecondaryButton = styled(ButtonStyled)``;
 
-const TertiaryButton = styled(ButtonStyled)`
-  background-color: #50f050;
-`;
+const TertiaryButton = styled(ButtonStyled)``;
 
-const SpecialityButton = styled(ButtonStyled)`
-  background-color: #ffff45;
-`;
+const SpecialityButton = styled(ButtonStyled)``;
