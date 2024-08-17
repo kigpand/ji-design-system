@@ -1,5 +1,4 @@
 import { ButtonProps } from "@/types/ButtonProps";
-import { colors } from "@/utils/styles";
 import styled from "styled-components";
 
 const Button = (props: ButtonProps) => {
@@ -23,21 +22,20 @@ const ButtonStyled = styled.button`
   border: none;
   outline: none;
   border-radius: 4px;
-  cursor: pointer;
 `;
 
 const PrimaryButton = styled(ButtonStyled)`
-  background-color: ${colors.primiary};
+  background-color: #3dbfeb;
 `;
 
 const SecondaryButton = styled(ButtonStyled)`
-  background-color: ${colors.secondary};
+  background-color: #ff5252;
 `;
 
 const TertiaryButton = styled(ButtonStyled)`
-  background-color: ${colors.tertiary};
+  background-color: #50f050;
 `;
 
 const SpecialityButton = styled(ButtonStyled)`
-  background-color: ${colors.speciality};
+  background-color: #ffff45;
 `;
