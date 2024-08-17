@@ -1,6 +1,6 @@
 {
   "name": "@kigpand/ji-design-system",
-  "version": "6.4.0",
+  "version": "6.5.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
