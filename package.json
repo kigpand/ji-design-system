@@ -1,5 +1,5 @@
 {
-  "name": "ji-design-system",
+  "name": "@kigpand/ji-design-system",
   "version": "6.3.0",
   "description": "",
   "main": "dist/index.js",
