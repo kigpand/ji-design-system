@@ -1,6 +1,6 @@
-import { ButtonProps } from "@/types/ButtonProps";
-import { colors } from "@/utils/styles";
 import styled from "styled-components";
+import { ButtonProps } from "../../types/ButtonProps";
+import { colors } from "../../utils/styles";
 
 const Button = (props: ButtonProps) => {
   if (props.func === "primary")
