@@ -1,5 +1,5 @@
-import { InputProps } from "@/types/InputProps";
 import styled from "styled-components";
+import { InputProps } from "../../types/InputProps";
 
 export default function Input(props: InputProps) {
   return <InputStyled {...props} />;
