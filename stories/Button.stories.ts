@@ -19,6 +19,7 @@ export const Primary: Story = {
   args: {
     label: "primary",
     func: "primary",
+    size: "MD",
   },
 };
 
@@ -26,6 +27,7 @@ export const Secondary: Story = {
   args: {
     label: "secondary",
     func: "secondary",
+    size: "MD",
   },
 };
 
@@ -33,6 +35,7 @@ export const Tertiary: Story = {
   args: {
     label: "tertiary",
     func: "tertiary",
+    size: "MD",
   },
 };
 
@@ -40,5 +43,6 @@ export const Speciality: Story = {
   args: {
     label: "speciality",
     func: "speciality",
+    size: "MD",
   },
 };
