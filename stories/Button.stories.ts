@@ -5,9 +5,6 @@ import { ButtonProps } from "../src/types/ButtonProps";
 const meta = {
   title: "Button/Button",
   component: Button,
-  parameters: {
-    layout: "centered",
-  },
   tags: ["autodocs"],
   argTypes: {},
 } satisfies Meta<ButtonProps>;
