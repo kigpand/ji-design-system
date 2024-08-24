@@ -18,6 +18,7 @@ const LabelInputStyled = styled.div`
   gap: 4px;
 
   label {
+    padding-left: 4px;
     font-weight: bold;
     font-size: 12px;
   }

@@ -5,6 +5,7 @@ import { StoryObj } from "@storybook/react/*";
 const meta = {
   title: "Input/LabelInput",
   component: LabelInput,
+  argTypes: {},
 } satisfies Meta<typeof LabelInput>;
 export default meta;
 
@@ -15,6 +16,6 @@ export const LabelInputView: Story = {
     style: {
       width: "150px",
     },
-    label: "test label",
+    label: "asd",
   },
 };

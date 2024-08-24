@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ButtonProps } from "../../types/ButtonProps";
 import { colors } from "../../utils/styles";
+import { Size } from "../../types/Types";
 
 const Button = (props: ButtonProps) => {
   if (props.func === "primary")
@@ -16,8 +17,13 @@ const Button = (props: ButtonProps) => {
 
 export default Button;
 
-const ButtonStyled = styled.button`
-  padding: 8px 16px;
+const ButtonStyled = styled.button<{ size: Size }>`
+  padding: ${(props) =>
+    props.size === "LG"
+      ? "16px 32px"
+      : props.size === "MD"
+        ? "8px 16px"
+        : "4px 8px"};
   font-weight: bold;
   color: white;
   border: none;
