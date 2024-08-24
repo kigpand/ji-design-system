@@ -1,18 +1,18 @@
 import styled from "styled-components";
-import Input from "./Input";
 import { LabelComponentProps } from "../../types/LabelComponentProps";
-import { InputProps } from "../../types/InputProps";
+import { SelectProps } from "../../types/SelectProps";
+import Select from "./Select";
 
-export default function LabelInput(props: LabelComponentProps<InputProps>) {
+export default function LabelSelect(props: LabelComponentProps<SelectProps>) {
   return (
-    <LabelInputStyled>
+    <LabelSelectStyled>
       <label>{props.label}</label>
-      <Input {...props} />
-    </LabelInputStyled>
+      <Select {...props} />
+    </LabelSelectStyled>
   );
 }
 
-const LabelInputStyled = styled.div`
+const LabelSelectStyled = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
