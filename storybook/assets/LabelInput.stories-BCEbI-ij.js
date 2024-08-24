@@ -1,4 +1,4 @@
-import{d as o,j as t}from"./styled-components.browser.esm-C5ebvetf.js";import{I as p}from"./Input-BU1AF6mD.js";import"./index-RYns6xqu.js";function l(n){return t.jsxs(i,{children:[t.jsx("label",{children:n.label}),t.jsx(p,{...n})]})}const i=o.div`
+import{d as o,j as t}from"./styled-components.browser.esm-Dtenumop.js";import{I as p}from"./Input-BnrmdNe7.js";import"./index-RYns6xqu.js";function l(n){return t.jsxs(i,{children:[t.jsx("label",{children:n.label}),t.jsx(p,{...n})]})}const i=o.div`
   width: 100%;
   display: flex;
   flex-direction: column;
