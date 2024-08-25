@@ -7,7 +7,7 @@ import postcss from "rollup-plugin-postcss"; // css 적용을 위해 postcss 이
 
 export default [
   {
-    external: ["styled-components", "react/jsx-runtime"],
+    external: ["styled-components", "react/jsx-runtime", "react"],
     input: "./src/index.ts",
     output: [
       {
