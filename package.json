@@ -1,6 +1,6 @@
 {
   "name": "ji-design-system",
-  "version": "6.7.6",
+  "version": "6.8.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
