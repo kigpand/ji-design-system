@@ -22,8 +22,8 @@ const ButtonStyled = styled.button<{ size: Size }>`
     props.size === "LG"
       ? "16px 32px"
       : props.size === "MD"
-        ? "8px 16px"
-        : "4px 8px"};
+        ? "10px 18px"
+        : "8px 12px"};
   font-weight: bold;
   color: white;
   border: none;
