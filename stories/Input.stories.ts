@@ -12,5 +12,7 @@ export default meta;
 type Story = StoryObj<typeof Input>;
 
 export const InputView: Story = {
-  args: {},
+  args: {
+    $width: "100px",
+  },
 };
