@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { SelectProps } from "../../types/SelectProps";
 import { useState } from "react";
 import SelectItem from "./SelectItem";
 
 export default function Select(props: SelectProps) {
   const [placeholder, setPlaceholder] = useState<string>(props.placeholder);
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean | null>(null);
 
   function handleSelectItem(value: string) {
     setPlaceholder(value);
@@ -15,11 +15,11 @@ export default function Select(props: SelectProps) {
 
   return (
     <SelectWrapper>
-      <Placeholder $isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+      <Placeholder onClick={() => setIsOpen(!isOpen)}>
         {placeholder}
       </Placeholder>
-      {isOpen && (
-        <SelectListWrapper>
+      {isOpen !== null && (
+        <SelectListWrapper $isOpen={isOpen}>
           {props.values.map((value) => {
             return (
               <SelectItem
@@ -44,7 +44,7 @@ type ContainerProps = {
   $isOpen: boolean;
 };
 
-const Placeholder = styled.div<ContainerProps>`
+const Placeholder = styled.div`
   width: 100%;
   height: 35px;
   padding: 0px 8px;
@@ -57,7 +57,12 @@ const Placeholder = styled.div<ContainerProps>`
   color: gray;
 `;
 
-const SelectListWrapper = styled.ul`
+const selectListOpacity = ($isOpen: boolean) => css`
+  animation: ${$isOpen ? fadeIn : fadeOut} 0.15s ease-in forwards;
+`;
+
+const SelectListWrapper = styled.ul<ContainerProps>`
+  opacity: 0;
   position: absolute;
   top: 40px;
   left: 0px;
@@ -70,4 +75,23 @@ const SelectListWrapper = styled.ul`
   border-bottom-right-radius: 4px;
   overflow: hidden;
   border: 1px solid gray;
+  ${(props) => selectListOpacity(props.$isOpen)};
+`;
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+const fadeOut = keyframes`
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 `;
