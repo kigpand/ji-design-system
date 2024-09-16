@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "rollup -c && tsc --emitDeclarationOnly"
+    "build": "rollup -c && tsc --emitDeclarationOnly",
+    "prepare": "husky",
+    "postinstall": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -37,6 +39,7 @@
     "@storybook/test": "^8.2.8",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "husky": "^9.1.6",
     "rollup": "^4.20.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
