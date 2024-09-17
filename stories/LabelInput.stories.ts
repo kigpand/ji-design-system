@@ -13,9 +13,8 @@ type Story = StoryObj<typeof LabelInput>;
 
 export const LabelInputView: Story = {
   args: {
-    style: {
-      width: "150px",
-    },
+    $width: "150px",
     label: "asd",
+    errortext: "",
   },
 };
