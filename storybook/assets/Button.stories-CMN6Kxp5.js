@@ -1,4 +1,4 @@
-import{d as a,j as r}from"./styled-components.browser.esm-Dtenumop.js";import"./index-RYns6xqu.js";const o={primiary:"#3dbfeb",secondary:"#ff5252",tertiary:"#50f050",speciality:"#ffc745"},z=e=>e.func==="primary"?r.jsx(D,{...e,children:e.label}):e.func==="secondary"?r.jsx(B,{...e,children:e.label}):e.func==="tertiary"?r.jsx(h,{...e,children:e.label}):e.func==="speciality"?r.jsx(j,{...e,children:e.label}):r.jsx(t,{...e,children:e.label}),t=a.button`
+import{d as a,j as r}from"./styled-components.browser.esm-B9PbkTCc.js";import"./index-RYns6xqu.js";const o={primiary:"#3dbfeb",secondary:"#ff5252",tertiary:"#50f050",speciality:"#ffc745"},z=e=>e.func==="primary"?r.jsx(D,{...e,children:e.label}):e.func==="secondary"?r.jsx(B,{...e,children:e.label}):e.func==="tertiary"?r.jsx(h,{...e,children:e.label}):e.func==="speciality"?r.jsx(j,{...e,children:e.label}):r.jsx(t,{...e,children:e.label}),t=a.button`
   padding: ${e=>e.size==="LG"?"16px 32px":e.size==="MD"?"10px 18px":"8px 12px"};
   font-weight: bold;
   color: white;
