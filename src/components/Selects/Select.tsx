@@ -55,6 +55,7 @@ const Placeholder = styled.div`
   align-items: center;
   padding-left: 4px;
   color: gray;
+  cursor: pointer;
 `;
 
 const selectListOpacity = ($isOpen: boolean) => css`

@@ -2,5 +2,5 @@ import { InputHTMLAttributes } from "react";
 
 export type InputProps = {
   $width: string;
-  errorText?: string;
+  errortext?: string;
 } & InputHTMLAttributes<HTMLInputElement>;

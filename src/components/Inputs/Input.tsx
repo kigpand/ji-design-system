@@ -5,7 +5,9 @@ export default function Input(props: InputProps) {
   return (
     <Wrapper $width={props.$width}>
       <InputStyled {...props} />
-      {props.errorText && <ErrorText>{props.errorText}</ErrorText>}
+      {props.errortext && props.errortext !== "" && (
+        <ErrorText>{props.errortext}</ErrorText>
+      )}
     </Wrapper>
   );
 }
@@ -27,5 +29,5 @@ const ErrorText = styled.div`
   color: red;
   position: absolute;
   margin-top: 4px;
-  font-size: 8px;
+  font-size: 10px;
 `;

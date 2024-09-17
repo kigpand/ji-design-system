@@ -15,5 +15,6 @@ export const LabelInputView: Story = {
   args: {
     $width: "150px",
     label: "asd",
+    errortext: "",
   },
 };
