@@ -1,6 +1,6 @@
 {
   "name": "ji-design-system",
-  "version": "6.9.0",
+  "version": "6.9.2",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -11,8 +11,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build": "rollup -c && tsc --emitDeclarationOnly",
-    "prepare": "husky",
-    "postinstall": "husky install"
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
