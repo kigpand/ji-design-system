@@ -84,6 +84,7 @@ const fadeIn = keyframes`
     opacity: 0;
   }
   100% {
+    visibility: visible;
     opacity: 1;
   }
 `;
@@ -94,5 +95,6 @@ const fadeOut = keyframes`
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 `;
