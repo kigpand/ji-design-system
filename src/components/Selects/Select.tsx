@@ -15,7 +15,11 @@ export default function Select(props: SelectProps) {
 
   return (
     <SelectWrapper>
-      <Placeholder onClick={() => setIsOpen(!isOpen)}>
+      <Placeholder
+        tabIndex={0}
+        onFocus={() => setIsOpen(true)}
+        onBlur={() => setIsOpen(false)}
+      >
         {placeholder}
       </Placeholder>
       {isOpen !== null && (
