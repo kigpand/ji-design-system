@@ -16,6 +16,7 @@ export default function SearchAble({
   handleSelectView,
   ...props
 }: Props) {
+  console.log("test");
   return (
     <SearchWrapper
       value={search}
