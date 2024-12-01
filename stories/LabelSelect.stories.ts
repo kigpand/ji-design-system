@@ -1,5 +1,4 @@
-import { Meta } from "@storybook/react/*";
-import { StoryObj } from "@storybook/react/*";
+import { Meta, StoryObj } from "@storybook/react";
 import LabelSelect from "../src/components/Selects/LabelSelect";
 
 const meta = {
@@ -16,6 +15,7 @@ export const LabelSelectView: Story = {
     label: "테스트 라벨",
     placeholder: "테스트입니다",
     values: ["1", "2", "3", "4", "5"],
+    width: "500px",
     handleChangeSelect: (value) => console.log(value),
   },
 };

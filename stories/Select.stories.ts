@@ -1,5 +1,4 @@
-import { Meta } from "@storybook/react/*";
-import { StoryObj } from "@storybook/react/*";
+import { Meta, StoryObj } from "@storybook/react";
 import Select from "../src/components/Selects/Select";
 
 const meta = {
@@ -15,6 +14,7 @@ export const SelectView: Story = {
   args: {
     placeholder: "테스트입니다",
     values: ["1", "2", "3", "4", "5"],
+    width: "300px",
     handleChangeSelect: (value) => console.log(value),
   },
 };

@@ -1,5 +1,5 @@
 export type SelectProps = {
-  width?: string;
+  width: string;
   placeholder: string;
   values: string[];
   handleChangeSelect: (select: string) => void;
