@@ -14,8 +14,12 @@ export default function Select(props: SelectProps) {
   }
 
   return (
-    <SelectWrapper>
-      <Placeholder onClick={() => setIsOpen(!isOpen)}>
+    <SelectWrapper $width={props.width}>
+      <Placeholder
+        tabIndex={0}
+        onFocus={() => setIsOpen(true)}
+        onBlur={() => setIsOpen(false)}
+      >
         {placeholder}
       </Placeholder>
       {isOpen !== null && (
@@ -35,9 +39,9 @@ export default function Select(props: SelectProps) {
   );
 }
 
-const SelectWrapper = styled.div`
+const SelectWrapper = styled.div<{ $width: string }>`
   position: relative;
-  width: 100%;
+  width: ${(props) => props.$width};
 `;
 
 type ContainerProps = {
